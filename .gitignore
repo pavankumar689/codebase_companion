@@ -1,0 +1,15 @@
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+
+# Temporary folders created by the app
+temp_repo/
+chroma_db/
+
+# Environment variables and secrets
+.env
+
+# VS Code settings
+.vscode/

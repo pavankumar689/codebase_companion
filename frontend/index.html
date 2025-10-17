@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codebase Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <div id="initial-view">
+            <div class="initial-view-content">
+                <h1>Codebase Companion 🤖</h1>
+                <p>Enter a public GitHub repository URL to start chatting with your code.</p>
+                <div class="repo-form">
+                    <input type="text" id="repo-url" placeholder="e.g., https://github.com/facebook/react">
+                    <button id="analyze-btn">Analyze</button>
+                </div>
+                <p id="status-message"></p>
+            </div>
+        </div>
+
+        <div id="chat-view" class="hidden">
+            <div id="chat-window">
+                </div>
+            <div id="thinking-indicator" class="hidden">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <form id="chat-form">
+                <div class="chat-input-wrapper">
+                    <input type="text" id="chat-input" placeholder="Ask a question about the code..." autocomplete="off">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
